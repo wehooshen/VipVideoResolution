@@ -12,7 +12,7 @@ if($_POST['username'] && $_POST['password']){
 	$admin_name = htmlspecialchars($_POST['username']);
 	$admin_pass = md5ff(htmlspecialchars($_POST['password']));
 	if($admin_name==$aik['admin_name']  && $admin_pass==$aik['admin_pass']){
-		$_SESSION['admin_aik'] = 'http://www.ff6.wang/';
+		$_SESSION['admin_aik'] = 'https://kanpian.rocks/';
 		//header("location: ./index.php");
 		echo '<script>window.location.href="./index.php";</script>';
 		exit;
